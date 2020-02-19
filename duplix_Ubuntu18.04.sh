@@ -22,14 +22,3 @@ printf 'Duplix is ready for use...\n\n'
 sleep 3
 
 printf '\nAccess your duplix site : \n\n' \ && printf '\n http://localhost:8200/ \n\n'
-
-
-# Docker Compose
-sudo wget \
-        --output-document=/usr/local/bin/docker-compose \
-        https://github.com/docker/compose/releases/download/1.24.0/run.sh \
-    && sudo chmod +x /usr/local/bin/docker-compose \
-    && sudo wget \
-        --output-document=/etc/bash_completion.d/docker-compose \
-        "https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose" \
-    && printf '\nDocker Compose installed successfully\n\n'
