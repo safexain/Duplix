@@ -19,6 +19,10 @@ wget https://raw.githubusercontent.com/safexain/Duplix/master/duplicati.service
 sudo mv duplicati.service /lib/systemd/system/duplicati.service
 
 printf 'Duplix is ready for use...\n\n'
+sudo systemctl daemon-reload
+sudo systemctl enable duplicati.service
+sudo systemctl start duplicati.service
 sleep 3
 
 printf '\nAccess your duplix site : \n\n' \ && printf '\n http://localhost:8200/ \n\n'
+
