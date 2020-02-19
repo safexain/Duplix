@@ -16,5 +16,3 @@ sudo alien -i duplix-2.0.5.1-2.noarch.rpm
 sudo rm -rf duplix-2.0.5.1-2.noarch.rpm
 
 printf '\nAccess your duplix site : \n\n' \ && printf '\n http://localhost:8200/ \n\n'
-
-
