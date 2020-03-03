@@ -11,7 +11,7 @@ set -eu
 
 wget https://github.com/safexain/Duplix/raw/master/duplix-2.0.deb
 
-sudo apt install ./duplix-2.0.deb \
+sudo apt install ./duplix-2.0.deb -y \
     && printf '\nDUPLIX installed successfully\n\n'
 
 sudo rm duplix-2.0.deb
